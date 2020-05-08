@@ -26,7 +26,7 @@ class PersonalWebsite(models.Model):
 class Education(models.Model):
 	education = models.CharField(max_length = 50)
 	institute = models.CharField(max_length = 50)
-	grade = models.DecimalField(max_digits = 3, decimal_places = 2)
+	grade = models.DecimalField(max_digits = 5, decimal_places = 2)
 
 	def __str__(self):
 		return self.education
