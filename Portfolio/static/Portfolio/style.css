@@ -180,20 +180,26 @@ nav {
     text-decoration-line: all;
     font-size: 30px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .technology {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .row {
     margin-right: 80px;
+    column-count: 3;
+}
+
+.list {
+    color: green;
 }
 
 .technology h4{
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 5px;
     color: green;
 }
 

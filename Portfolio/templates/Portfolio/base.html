@@ -68,23 +68,12 @@
                 <h3>
                     Projects
                 </h3>
+                {% for p in project %}
                 <div class="project">
-                    <h4>BlogApp</h4> 
-                    <p>Developed BlogApp using Django framework and REST API.</p>
-                    <p>The whole blogapp is upploaded on heroku online.</p>
+                    <h4>{{ p.project_title }}</h4> 
+                    <p>{{ p.project_description }}</p>
                 </div>    
-                <div class="project">    
-                    <h4>CarPool</h4>
-                    <p>Designed and Developed a Carpool app during the City Hackathon</p>
-                </div>   
-                <div class="project">    
-                    <h4>InstaBot</h4>
-                    <p>Developed a web automation for social media marketing</p>
-                </div>   
-                <div class="project">    
-                    <h4>Alumni Association</h4>
-                    <p>Side project to practice frontend and backend web development</p>
-                </div>
+                {% endfor %}
             </div>
             <div class="technology-details">
                 <h3>
@@ -92,47 +81,15 @@
                 </h3>
                 <div class="technology">    
                     <div class="row">
-                        <h4>
-                            Python
-                        </h4>
-                        <h4>
-                            HTML, CSS
-                        </h4>
-                        <h4>
-                            Javascript
-                        </h4>
-                        <h4>
-                            C++, C
-                        </h4>
-                        
-                    </div>
-                    <div class="row">
-                        <h4>
-                            Django
-                        </h4>
-                        <h4>
-                            SQL
-                        </h4>
-                        <h4>
-                            PHP
-                        </h4>
-                        <h4>
-                            Javascript  
-                        </h4>
-                    </div>
-                    <div class="row">
-                        <h4>
-                            Git and GitHub
-                        </h4>
-                        <h4>
-                            Chrome Dev Tools
-                        </h4>
-                        <h4>
-                            VS Code
-                        </h4>
-                        <h4>
-                            Sublime Text
-                        </h4>
+                        <ul>
+                            {% for t in technicalskill %}
+                            <li class="list">
+                            <h4>
+                                    {{ t }}
+                            </h4>
+                            </li>
+                        {% endfor %}
+                    </ul>
                     </div>
                 </div>
             </div>
@@ -141,14 +98,16 @@
                     Perosnal Websites
                 </h3>
                 <div class="website">
+                    {% for website in personalwebsite %}
                     <h4>
                         <a href="#">
-                            Zeel Sinojia
+                            {{ website.personal_website }}
                         </a>
                     </h4>
                     <p>
-                        Personal Django app about programming, web development, design, and more
+                        {{ website.personal_website_description }}
                     </p>
+                    {% endfor %}
                 </div>
             </div>
         </section>
@@ -157,35 +116,24 @@
                 <h3>
                     Education
                 </h3>
+                {% for e in education %}
                 <div class="education">
-                    <h4>Marwadi Education Foundation Group of Institutions</h4> 
-                    <p>Bachelor of Engineering in Computer Engnineering</p>
-                    <p>CPI: 8.76/10</p>
+                    <h4>{{ e.institute }}</h4> 
+                    <p>{{ e.education }}</p>
+                    <p>Grades: {{ e.grade }}</p>
                 </div>
-                <div class="education">
-                    <h4>Modi Schools</h4> 
-                    <p>Higher Secondary</p>
-                    <p>Percentile: 98.07</p>
-                </div>
-                <div class="education">
-                    <h4>Modi Schools</h4> 
-                    <p>Secondary</p>
-                    <p>Percentile: 99.45</p>
-                </div>
+                {% endfor %}
             </div>
             <div class="activity-details">
                 <h3>
                     Activities/Hobbies
                 </h3>
+                {% for a in activity %}
                 <div class="activity">
-                    <h4>Astronomy</h4> 
-                    <p>Has a keen interest in astronomical theories and scientific discovries</p>
-                    <p>Participated in event organized at Physical Research Laboratory</p>
+                    <h4>{{ a.activity }}</h4> 
+                    <p>{{ a.activity_description }}</p>
                 </div>
-                <div class="activity">
-                    <h4>Mathematics</h4> 
-                    <p>Millennial questions and studying mathematics as hobby</p>
-                </div>
+                {% endfor %}
             </div>
             <div class="resume-details">
                 <h3>Resume</h3>
