@@ -1,0 +1,348 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-y: scroll;
+    background-color: white;
+    color: black;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+home {
+    height: 10vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    min-height: 10vh;
+}
+
+.nav-bar-header {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.media-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-top: 10px;
+}
+
+.media-links li {
+    list-style: none;
+}
+
+.media-links a {
+    text-decoration: none;
+    color: green;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    color: green;
+}
+
+.burger {
+    margin-top: 5px;
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.home h3 {
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.home p {
+    font-size: 20px;
+}
+
+.home p b {
+    font-weight: normal;
+    color: green;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.section-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 10vh;
+    width: 80%;
+    margin-left: 50px;
+}
+
+.projects-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 50px;
+    padding: 30px;
+    border: 2px solid green;
+    border-radius: 3px;
+}
+
+.projects-details h3 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-line: all;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.project h4{
+    font-size: 25px;
+    margin-top: 20px;
+    color: green;
+}
+
+.project p {
+    margin-top: 5px;
+}
+
+.technology-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;   
+    margin-top: 50px;
+    padding: 30px;
+    border: 2px solid green;
+    border-radius: 3px;
+}
+
+.technology-details h3 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-line: all;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.technology {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row {
+    margin-right: 80px;
+}
+
+.technology h4{
+    font-size: 20px;
+    margin-top: 20px;
+    color: green;
+}
+
+.website-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 50px;    
+    padding: 30px;
+    border: 2px solid green;
+    border-radius: 3px;
+}
+
+.website-details h3 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-line: all;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.website {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.website h4{
+    font-size: 25px;
+    margin-top: 20px;
+    color: green;
+}
+
+.website h4 a {
+    color: green;
+    text-decoration: none;
+}
+
+.aside-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 10vh;
+    width: 50%;
+    margin-right: 50px;
+}
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 50px;
+    padding: 30px;
+    border: 2px solid green;
+    border-radius: 3px;
+}
+
+.education-details h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-line: all;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.education h4{
+    font-size: 25px;
+    margin-top: 20px;
+    color: green;
+}
+
+.activity-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    padding: 30px;    
+    border: 2px solid green;
+    border-radius: 3px;
+}
+
+.activity-details h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-line: all;
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.activity h4{
+    font-size: 25px;
+    margin-top: 20px;
+    color: green;
+}
+
+.resume-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    padding: 30px;
+    border: 2px solid green;
+    border-radius: 3px;
+}
+
+.resume-details h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-line: all;
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.resume a h4{
+    color: green;
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-line: all;
+    margin-top: 20px;
+}
+
+.footer-details {
+    display: flex;
+    justify-content: space-around;
+    margin:50px;
+}
+
+.footer h4 {
+    letter-spacing: 3px;
+}
+
+.footer h4 a {
+    text-decoration: none;
+    color: green;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {}

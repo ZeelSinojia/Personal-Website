@@ -1,0 +1,207 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zeel Sinojia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'Portfolio/style.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar-header">
+                <div class="logo">
+                    <h4>Zeel Sinojia</h4>
+                </div>
+                <ul class="media-links">
+                    <li>
+                        <a href="https://github.com/ZeelSinojia">
+                            <img src="{% static 'Portfolio/images/github-logo.png' %}" alt="github" height="30px" width="30px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/_zeel___/">
+                            <img src="{% static 'Portfolio/images/instagram.png' %}" alt="instagram" height="30px" width="30px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/zeelsinojia/">
+                            <img src="{% static 'Portfolio/images/linkedin.png' %}" alt="linkedin" height="30px" width="30px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="home">
+        <h3>
+            I'm Zeel
+        </h3>
+        <p>
+            <b><</b>I'm Software Engineer/Web Developer<b>></b>
+        </p>
+    </div>
+    <div class="about-content">
+        <section class="section-part">
+            <div class="projects-details">
+                <h3>
+                    Projects
+                </h3>
+                <div class="project">
+                    <h4>BlogApp</h4> 
+                    <p>Developed BlogApp using Django framework and REST API.</p>
+                    <p>The whole blogapp is upploaded on heroku online.</p>
+                </div>    
+                <div class="project">    
+                    <h4>CarPool</h4>
+                    <p>Designed and Developed a Carpool app during the City Hackathon</p>
+                </div>   
+                <div class="project">    
+                    <h4>InstaBot</h4>
+                    <p>Developed a web automation for social media marketing</p>
+                </div>   
+                <div class="project">    
+                    <h4>Alumni Association</h4>
+                    <p>Side project to practice frontend and backend web development</p>
+                </div>
+            </div>
+            <div class="technology-details">
+                <h3>
+                    Technical Skills
+                </h3>
+                <div class="technology">    
+                    <div class="row">
+                        <h4>
+                            Python
+                        </h4>
+                        <h4>
+                            HTML, CSS
+                        </h4>
+                        <h4>
+                            Javascript
+                        </h4>
+                        <h4>
+                            C++, C
+                        </h4>
+                        
+                    </div>
+                    <div class="row">
+                        <h4>
+                            Django
+                        </h4>
+                        <h4>
+                            SQL
+                        </h4>
+                        <h4>
+                            PHP
+                        </h4>
+                        <h4>
+                            Javascript  
+                        </h4>
+                    </div>
+                    <div class="row">
+                        <h4>
+                            Git and GitHub
+                        </h4>
+                        <h4>
+                            Chrome Dev Tools
+                        </h4>
+                        <h4>
+                            VS Code
+                        </h4>
+                        <h4>
+                            Sublime Text
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="website-details">
+                <h3>
+                    Perosnal Websites
+                </h3>
+                <div class="website">
+                    <h4>
+                        <a href="#">
+                            Zeel Sinojia
+                        </a>
+                    </h4>
+                    <p>
+                        Personal Django app about programming, web development, design, and more
+                    </p>
+                </div>
+            </div>
+        </section>
+        <aside class="aside-part">
+            <div class="education-details">
+                <h3>
+                    Education
+                </h3>
+                <div class="education">
+                    <h4>Marwadi Education Foundation Group of Institutions</h4> 
+                    <p>Bachelor of Engineering in Computer Engnineering</p>
+                    <p>CPI: 8.76/10</p>
+                </div>
+                <div class="education">
+                    <h4>Modi Schools</h4> 
+                    <p>Higher Secondary</p>
+                    <p>Percentile: 98.07</p>
+                </div>
+                <div class="education">
+                    <h4>Modi Schools</h4> 
+                    <p>Secondary</p>
+                    <p>Percentile: 99.45</p>
+                </div>
+            </div>
+            <div class="activity-details">
+                <h3>
+                    Activities/Hobbies
+                </h3>
+                <div class="activity">
+                    <h4>Astronomy</h4> 
+                    <p>Has a keen interest in astronomical theories and scientific discovries</p>
+                    <p>Participated in event organized at Physical Research Laboratory</p>
+                </div>
+                <div class="activity">
+                    <h4>Mathematics</h4> 
+                    <p>Millennial questions and studying mathematics as hobby</p>
+                </div>
+            </div>
+            <div class="resume-details">
+                <h3>Resume</h3>
+                <div class="resume">
+                    <a href="{% static 'Portfolio/docs/Zeel-Sinojia-Resume.pdf' %}" target="_blank">
+                        <h4>View Reusme(PDF)</h4>
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer class="footer-details">
+        <div class="footer">
+            <h4>&copy;2020•<a href="#">Zeel Sinojia</a></h4>
+        </div>
+    </footer>
+</body>
+
+</html>
