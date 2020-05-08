@@ -11,11 +11,11 @@ from .models import (
 
 
 def home(request):
-	return render(request, 'Portfolio/base.html')
+	return render(request, 'Portfolio/index.html')
 
 class PortFolioListView(ListView):
 	context_object_name = 'project'
-	template_name = 'Portfolio/base.html'
+	template_name = 'Portfolio/portfolio.html'
 
 	def get_queryset(self):
 		self.project = get_object_or_404

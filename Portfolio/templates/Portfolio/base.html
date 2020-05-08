@@ -17,17 +17,17 @@
                 </div>
                 <ul class="media-links">
                     <li>
-                        <a href="https://github.com/ZeelSinojia">
+                        <a href="https://github.com/ZeelSinojia" target="_blank">
                             <img src="{% static 'Portfolio/images/github-logo.png' %}" alt="github" height="30px" width="30px">
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/_zeel___/">
+                        <a href="https://www.instagram.com/_zeel___/" target="_blank">
                             <img src="{% static 'Portfolio/images/instagram.png' %}" alt="instagram" height="30px" width="30px">
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/zeelsinojia/">
+                        <a href="https://www.linkedin.com/in/zeelsinojia/" target="_blank">
                             <img src="{% static 'Portfolio/images/linkedin.png' %}" alt="linkedin" height="30px" width="30px">
                         </a>
                     </li>
@@ -44,7 +44,7 @@
                     <a href="#">Contact</a>
                 </li>
                 <li>
-                    <a href="#">Portfolio</a>
+                    <a href="{% url 'portfolio' %}">Portfolio</a>
                 </li>
             </ul>
             <div class="burger">
@@ -54,97 +54,7 @@
             </div>
         </nav>
     </header>
-    <div class="home">
-        <h3>
-            I'm Zeel
-        </h3>
-        <p>
-            <b><</b>I'm Software Engineer/Web Developer<b>></b>
-        </p>
-    </div>
-    <div class="about-content">
-        <section class="section-part">
-            <div class="projects-details">
-                <h3>
-                    Projects
-                </h3>
-                {% for p in project %}
-                <div class="project">
-                    <h4>{{ p.project_title }}</h4> 
-                    <p>{{ p.project_description }}</p>
-                </div>    
-                {% endfor %}
-            </div>
-            <div class="technology-details">
-                <h3>
-                    Technical Skills
-                </h3>
-                <div class="technology">    
-                    <div class="row">
-                        <ul>
-                            {% for t in technicalskill %}
-                            <li class="list">
-                            <h4>
-                                    {{ t }}
-                            </h4>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="website-details">
-                <h3>
-                    Perosnal Websites
-                </h3>
-                <div class="website">
-                    {% for website in personalwebsite %}
-                    <h4>
-                        <a href="#">
-                            {{ website.personal_website }}
-                        </a>
-                    </h4>
-                    <p>
-                        {{ website.personal_website_description }}
-                    </p>
-                    {% endfor %}
-                </div>
-            </div>
-        </section>
-        <aside class="aside-part">
-            <div class="education-details">
-                <h3>
-                    Education
-                </h3>
-                {% for e in education %}
-                <div class="education">
-                    <h4>{{ e.institute }}</h4> 
-                    <p>{{ e.education }}</p>
-                    <p>Grades: {{ e.grade }}</p>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="activity-details">
-                <h3>
-                    Activities/Hobbies
-                </h3>
-                {% for a in activity %}
-                <div class="activity">
-                    <h4>{{ a.activity }}</h4> 
-                    <p>{{ a.activity_description }}</p>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="resume-details">
-                <h3>Resume</h3>
-                <div class="resume">
-                    <a href="{% static 'Portfolio/docs/Zeel-Sinojia-Resume.pdf' %}" target="_blank">
-                        <h4>View Reusme(PDF)</h4>
-                    </a>
-                </div>
-            </div>
-        </aside>
-    </div>
+    {% block content %}{% endblock %}
     <footer class="footer-details">
         <div class="footer">
             <h4>&copy;2020•<a href="#">Zeel Sinojia</a></h4>
