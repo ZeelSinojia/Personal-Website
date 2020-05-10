@@ -34,7 +34,7 @@ nav {
 .logo {
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 10px;
 }
 
@@ -45,13 +45,45 @@ nav {
     margin-top: 10px;
 }
 
+.github-link {
+    height: 30px;
+    width: 30px;
+    transition: color 100ms;
+    color: green;
+}
+
+.github-link:hover {
+    color: orangered;
+}
+
+.instagram-link {
+    height: 30px;
+    width: 30px;
+    transition: color 100ms;
+    color: green;
+}
+
+.instagram-link:hover {
+    color: orangered;
+}
+
+.linkedin-link {
+    height: 30px;
+    width: 30px;
+    transition: color 100ms;
+    color: green;
+}
+
+.linkedin-link:hover {
+    color: orangered;
+}
+
 .media-links li {
     list-style: none;
 }
 
 .media-links a {
     text-decoration: none;
-    color: green;
 }
 
 .nav-links {
@@ -59,6 +91,33 @@ nav {
     justify-content: space-around;
     width: 50%;
     margin-top: 10px;
+}
+
+.home-link {
+    color: green;
+    transition: color 100ms;
+}
+
+.home-link:hover {
+    color: orangered;
+}
+
+.contact-link {
+    color: green;
+    transition: color 100ms;
+}
+
+.contact-link:hover {
+    color: orangered;
+}
+
+.portfolio-link {
+    color: green;
+    transition: color 100ms;
+}
+
+.portfolio-link:hover {
+    color: orangered;
 }
 
 .nav-links li {
@@ -70,7 +129,6 @@ nav {
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 14px;
-    color: green;
 }
 
 .burger {
@@ -151,7 +209,7 @@ nav {
     align-items: stretch;
 }
 
-.project h4{
+.project h4 {
     font-size: 25px;
     margin-top: 20px;
     color: green;
@@ -165,7 +223,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 90%;   
+    width: 90%;
     margin-top: 50px;
     padding: 30px;
     border: 2px solid green;
@@ -197,7 +255,7 @@ nav {
     color: green;
 }
 
-.technology h4{
+.technology h4 {
     font-size: 20px;
     margin-top: 5px;
     color: green;
@@ -208,7 +266,7 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     width: 90%;
-    margin-top: 50px;    
+    margin-top: 50px;
     padding: 30px;
     border: 2px solid green;
     border-radius: 3px;
@@ -231,7 +289,7 @@ nav {
     align-items: stretch;
 }
 
-.website h4{
+.website h4 {
     font-size: 25px;
     margin-top: 20px;
     color: green;
@@ -240,6 +298,12 @@ nav {
 .website h4 a {
     color: green;
     text-decoration: none;
+    cursor: pointer;
+    transition: color 100ms;
+}
+
+.website h4 a:hover {
+    color: orangered;
 }
 
 .aside-part {
@@ -271,7 +335,7 @@ nav {
     font-size: 30px;
 }
 
-.education h4{
+.education h4 {
     font-size: 25px;
     margin-top: 20px;
     color: green;
@@ -282,7 +346,7 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     width: 90%;
-    padding: 30px;    
+    padding: 30px;
     border: 2px solid green;
     border-radius: 3px;
 }
@@ -297,7 +361,7 @@ nav {
     margin-top: 10px;
 }
 
-.activity h4{
+.activity h4 {
     font-size: 25px;
     margin-top: 20px;
     color: green;
@@ -322,10 +386,20 @@ nav {
     font-size: 30px;
     margin-top: 10px;
 }
-.resume a h4{
+
+.resume a {
     color: green;
     text-decoration: underline;
     text-decoration-color: green;
+    transition: color 100ms, text-decoration-color 100ms;
+}
+
+.resume a:hover {
+    color: orangered;
+    text-decoration-color: orangered;
+}
+
+.resume a h4 {
     text-decoration-line: all;
     margin-top: 20px;
 }
@@ -333,7 +407,7 @@ nav {
 .footer-details {
     display: flex;
     justify-content: space-around;
-    margin:50px;
+    margin: 50px;
 }
 
 .footer h4 {
@@ -345,10 +419,66 @@ nav {
     color: green;
 }
 
-@media screen and (max-width: 1024px) {
-    .nav-links {
-        width: 60%;
-    }
+.form-title {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-line: all;
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
-@media screen and (max-width: 768px) {}
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80vw;
+}
+
+.form p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.form label {
+    font-size: 20px;
+    color: green;
+    padding: 3px;
+}
+
+.form input {
+    padding: 3px;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.form textarea {
+    padding: 3px;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: row;
+}
+
+.form input[type="submit"] {
+    background-color: green;
+    color: rgb(226, 226, 226);
+    font-size: 20px;
+    max-width: 100px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 16px 24px;
+}

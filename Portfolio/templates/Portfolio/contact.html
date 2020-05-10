@@ -1,0 +1,14 @@
+{% extends "Portfolio/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="form">
+    <h3 class="form-title">
+        Contact
+    </h3>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Send"/>
+    </form>
+</div>
+{% endblock content %}
