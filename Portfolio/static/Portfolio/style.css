@@ -148,7 +148,8 @@ home {
     font-size: 14px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px),
+screen and (max-width: 950px) {
     .nav-bar-header {
         display: flex;
         justify-content: space-around;
@@ -237,7 +238,7 @@ home {
     justify-content: space-between;
     min-height: 10vh;
     width: 80%;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 .projects-details {
@@ -520,12 +521,21 @@ home {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px),
+screen and (max-width: 950px) {
     .about-content {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         height: 100%;
+    }
+    .section-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 10vh;
+        width: 80%;
+        margin-left: 80px;
     }
     .aside-part {
         display: flex;
@@ -533,7 +543,7 @@ home {
         justify-content: space-between;
         min-height: 10vh;
         width: 80%;
-        margin: auto;
+        margin: 80px;
     }
     .projects-details h3 {
         letter-spacing: 3px;
