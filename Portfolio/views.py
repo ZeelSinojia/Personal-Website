@@ -47,7 +47,11 @@ def contact(request):
         subject = form.cleaned_data.get("subject")
         message = form.cleaned_data.get("message")
 
-        send_mail(subject, message, 'sinojia.zeel2@gmail.com', [email])
+        message = 'By:' + email + ' \n' + message
+
+        send_mail(subject, message, 'sinojia.zeel2@gmail.com',
+                  ['sinojia.zeel2@gmail.com'])
+        form = ContactForm()
         context = {'form': form}
 
         return render(request, 'Portfolio/contact.html', context)

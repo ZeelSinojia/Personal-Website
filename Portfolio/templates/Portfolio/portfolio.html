@@ -20,19 +20,13 @@
                 <h3>
                     Technical Skills
                 </h3>
-                <div class="technology">    
-                    <div class="row">
-                        <ul>
-                            {% for t in technicalskill %}
-                            <li class="list">
-                            <h4>
-                                    {{ t }}
-                            </h4>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                    </div>
-                </div>
+                {% for t in technicalskill %}
+                <div class="technology">
+                    <h4>
+                        {{ t }}
+                    </h4>
+                </div>    
+                {% endfor %}
             </div>
             <div class="website-details">
                 <h3>
