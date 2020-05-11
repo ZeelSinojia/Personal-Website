@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,7 +26,8 @@ SECRET_KEY = 's4&+e=+$5dv-iwti_rmltaxt+51f(2s@bie8-bq%o!d6))!m!p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['myblogdjango.herokuapp.com']
 
 
 # Application definition
@@ -118,7 +120,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 
@@ -128,3 +130,5 @@ EMAIL_HOST_USER = 'sinojia.zeel2@gmail.com'
 EMAIL_HOST_PASSWORD = 'jpsbzahdulregzdi'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
+
+django_heroku.settings(locals())
